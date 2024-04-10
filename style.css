@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+  --lightcyan: hsl(179, 62%, 43%);
+  --cyan: hsl(179,69.3%,36.6%);
+  --brightyellow: hsl(71, 73%, 54%);
+  --lighttray: hsl(204, 43%, 93%);
+  --grayishblue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  background: var(--grayishblue);
+  height: 100%;
+  line-height: 1.5rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.main {
+  width: 720px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0.8px 10px 2px rgba(0,0,0,0.3);
+  transform: translate(-50%,-50%);
+  background: var(--lighttray);
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.main .top{
+  color: var(--grayishblue);
+  display: flex;
+  padding: 26px 35px;
+  flex-direction: column;
+  gap: 20px;
+}
+.main .top h1{
+  color: var(--cyan);
+}
+.main .top h4{
+  color: var(--brightyellow);
+}
+.main .bottom{
+  padding-top: 26px;
+  color: var(--lighttray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .bottom .signup{
+  width: 50%;
+  height: 300px;
+  padding: 26px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  background: var(--cyan);
+}
+.main .bottom .signup span{
+  display: flex;
+  gap: 20px;
+}
+.main .bottom .signup .signup-btn{
+  background: var(--brightyellow);
+  text-align: center;
+  text-decoration: none;
+  color: var(--lighttray);
+  border-radius: 6px;
+  box-shadow: 0 0.8px 10px 2px rgba(0,0,0,0.1);
+  padding: 16px 50px;
+}
+.main .bottom .why-us{
+  width: 50%;
+  height: 300px;
+  padding: 26px 35px;
+  overflow: hidden;
+ background: var(--lightcyan);
+  color: var(--lighttray);
+  line-height: 1.1rem;
+}
+.main .bottom .why-us h2{
+  margin-bottom: 20px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 90%;
+    padding: 0 20px;
+    padding-top: 40px;
+    margin-top: 140px;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    left: 5%;
+    border-radius: 3px;
+    top: auto;
+    transform: none;
+    margin-bottom: 40px;
+  }
+  .main .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .bottom .signup,
+  .main .bottom .why-us {
+    width: 114%;
+    
+    height: auto;
+  }
+  .main .top {
+    padding: 10px 20px;
+  }
+}
