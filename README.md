@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/abrarishere/singlePriceWeb)
-- Live Site URL: [Add live site URL here](https://abrarishere.github.io/singlePriceWeb/)
+- Solution URL: [solution URL](https://github.com/abrarishere/singlePriceWeb)
+- Live Site URL: [live site URL ](https://abrarishere.github.io/singlePriceWeb/)
 
 ## My process
 
